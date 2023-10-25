@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">HechosCuriosos</string>
+    <string name="Hecho1" >Hidrógeno (H):Es el elemento más abundante en el universo, constituyendo aproximadamente el 75% de su masa. Se utiliza en cohetes espaciales y es la fuente de energía en las reacciones de fusión nuclear.>Uno</string>
+    <string name="Hecho2" >Es esencial para la respiración aeróbica en la mayoría de los seres vivos.A pesar de ser necesario para la vida, es altamente reactivo y puede causar corrosión.>Dos</string>
+    <string name="Hecho3" >Es la base de la química orgánica y forma la columna vertebral de las moléculas biológicas, como el ADN y las proteínas.Tiene varias formas alotrópicas, incluyendo el diamante y el grafito.>Tres</string>
+    <string name="Hecho4">Hierro (Fe):Es uno de los metales más abundantes en la Tierra y es fundamental en la fabricación de acero.La hemoglobina, que transporta oxígeno en la sangre, contiene hierro.>Cuatro</string>
+    <string name="Hecho5" >Neón (Ne):Se utiliza en letreros de neón debido a su brillante luz roja cuando se excita eléctricamente.Es un gas noble y no reacciona fácilmente con otros elementos.>Cinco</string>
+    <string name="Hecho6">Calcio (Ca):Es esencial para la formación de huesos y dientes en seres humanos y otros animales.También se utiliza en la fabricación de cemento y en la industria alimentaria.>Seis</string>
+    <string name="Hecho7" >Cobre (Cu):Es un excelente conductor de electricidad y se utiliza comúnmente en cables y alambres eléctricos.Tiene propiedades antibacterianas y se utiliza en superficies de contacto en hospitales.>Siete</string>
+    <string name="Hecho8" >Plata (Ag):Es un metal precioso conocido por su brillo y valor histórico como moneda.Tiene propiedades antibacterianas y se utiliza en aplicaciones médicas y de higiene.>Ocho</string>
+    <string name="Hecho9" >Yodo (I):Es un elemento esencial para el funcionamiento de la glándula tiroides en el cuerpo humano.A menudo se utiliza en desinfectantes y tinturas de piel.>Nueve</string>
+    <string name="Hecho10" >Uranio (U):Se utiliza como combustible en reactores nucleares para producir energía eléctrica.Tiene isótopos que son inestables y se desintegran radiactivamente, lo que lo hace importante en la datación por radiocarbono.>Diez</string>
+
+    <string-array name="HechosCuriosos">
+        <item>"(H):Es el elemento más abundante en el universo, constituyendo aproximadamente el 75% de su masa. Se utiliza en cohetes espaciales y es la fuente de energía en las reacciones de fusión nuclear."</item>
+        <item>"Es esencial para la respiración aeróbica en la mayoría de los seres vivos.A pesar de ser necesario para la vida, es altamente reactivo y puede causar corrosión"</item>
+        <item>"rillante luz roja cuando se excita eléctricamente.Es un gas nobl"</item>
+        <item>"roja"</item>
+        <item>"xcita e"</item>
+        <item>"eléctricamente"</item>
+        <item>"un"</item>
+        <item>"nobl"</item>
+        <item>"respiración"</item>
+        <item>"esencial"</item>
+    </string-array>
+    <string-array name="HechosCuriosos2">
+        <item>"Es esencial para la respiración aeróbica en la mayoría de los seres vivos.A pesar de ser necesario para la vida, es altamente reactivo y puede causar corrosión"</item>
+        <item>"eléctricamente"</item>
+        <item>"un"</item>
+        <item>"esencial"</item>
+    </string-array>
+</resources>

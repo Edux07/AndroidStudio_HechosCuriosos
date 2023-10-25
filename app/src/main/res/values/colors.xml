@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ListaColores">
+        <item name="black">#FF000000</item>
+        <item name="white">#FFFFFFFF</item>
+        <item name="light blue">#39add1</item>
+        <item name="mauve">#c25975</item>
+        <item name="pure red">#f0000</item>
+        <item name="orange">#f9845b</item>
+        <item name="lavender">#838cc7</item>
+        <item name="purple">#7d669e</item>
+        <item name="aqua">#53bbb4</item>
+        <item name="pure green">#00ff0O</item>
+        <item name="mustard">#e0ab18</item>
+        <item name="dark gray">#7d669e</item>
+        <item name="purple">#637a91</item>
+        <item name="pink">#f092b0</item>
+        <item name="light gray">#b7c0c7</item>
+        <item name="garnet">#7a2021</item>
+    </array>
+</resources>
