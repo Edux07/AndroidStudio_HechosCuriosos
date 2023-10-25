@@ -3,6 +3,7 @@ package com.example.myapplication_hechos_curiosos;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     public int aux = cf.Colorespuros();
     CheckBox check;
+    Button btn;
     TextView modificar;
     ListaHechos listaHechos = new ListaHechos();
     List<Integer> Listacolores;
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         check = findViewById(R.id.checkBox);
-
+        btn= findViewById(R.id.button);
         Listacolores =  new ArrayList<>();
         int[] Listacoloritos = getResources().getIntArray(R.array.ListaColores);
 
@@ -62,11 +64,10 @@ public class MainActivity extends AppCompatActivity {
             case 9: modificar.setText(getString(R.string.Hecho10));break;
         }*/
     }
-    public void Cambiarhecho (View view){
+    public void Boton1(View view){
         modificar = findViewById(R.id.textView9);
         if(check.isChecked()){
-            ConstraintLayout cl = findViewById(R.id.Colorcitos);
-            cl.setBackgroundColor(cf.cambiarColor());
+            onBtnClic(view);
         }else{
             String[] arrayStrings = getResources().getStringArray(R.array.HechosCuriosos);
             int i =(int)(Math.random()*0);
@@ -76,20 +77,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    public void Curiosidadesvocales (View view){
-         modificar = findViewById(R.id.textView9);
-    if (check.isChecked()){
-        ConstraintLayout cl = findViewById(R.id.Colorcitos);
-        cl.setBackgroundColor(cf.cambiarColor());
-    }else {
-        ConstraintLayout cl = findViewById(R.id.Colorcitos);
 
-        modificar.setText(listaHechos.getFacts());
-        cl.setBackgroundColor(cf.cambiarColor());
-    }
-
-
-    }
 
     /*
      * La finalidad de el main en estos ejercicios es hacer una llamada a los metodos de las clases que correspondan
@@ -99,12 +87,11 @@ public class MainActivity extends AppCompatActivity {
      *
      *
      * */
-    public void cambiarcolorespuros(View view){//Declaras view, no se porque pero sino no vale.
+    public void Boton2(View view){//Declaras view, no se porque pero sino no vale.
 
         //en vuestro xml vuestro layout
         if (check.isChecked()){
-            ConstraintLayout cl = findViewById(R.id.Colorcitos);
-            cl.setBackgroundColor(cf.cambiarColor());
+            btn.performClick();
         }else {
             ConstraintLayout cl = findViewById(R.id.Colorcitos);
             //Es de tipo ConstraintLayout, antes de crear este objeto, lo compruebas en la primera linea del xml
@@ -119,6 +106,20 @@ public class MainActivity extends AppCompatActivity {
             //evitar que se repita.
             cl.setBackgroundColor(c);//Lanzamos el color nuevo, todo con un clic, comprobando que no se repite.
         }
+
+    }
+    public void Boton3(View view){
+        modificar = findViewById(R.id.textView9);
+        if (check.isChecked()){
+            btn.callOnClick();
+
+        }else {
+            ConstraintLayout cl = findViewById(R.id.Colorcitos);
+
+            modificar.setText(listaHechos.getFacts());
+            cl.setBackgroundColor(cf.cambiarColor());
+        }
+
 
     }
     public void Check (View view){
